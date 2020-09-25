@@ -10,6 +10,10 @@ as constructive and destructive interference into account.
 
 Made to help visualise things in a course named coms4105.
 
+There's some issues with lag when you move the mouse really slowly, and I think
+this is because it does an unnecessarily large amount of updates since there are 
+mouse movement events for every pixel. I could try to fix it, but there's no point.
+
 ## Building
 You need SDL2. On Linux the package `libsdl2-dev` will probably be available
 from your package manager.
