@@ -552,7 +552,7 @@ bool init(SDL_Window*& window, SDL_GLContext& glContext)
         SDL_Quit();
         return false;
     }
-    if (SDL_GL_SetSwapInterval(1) < 0)
+    if (SDL_GL_SetSwapInterval(0) < 0)
     {
         cerr << "Error: SDL_GL_SetSwapInterval: " << SDL_GetError() << endl;
         SDL_GL_DeleteContext(glContext);
